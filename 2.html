@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+    <script>
+    function second(num) {
+      document.write('<li>' + num + '-1</li>');
+      document.write('<li>' + num + '-2</li>');
+    }
+    function first(num) {
+      document.write('<li>' + num + '</li>');
+    }
+    // while을 이용해서 1~100개 번호 리스트 만들기
+    // 짝수 번호에는 2단계 리스트도 2개씩 나오게끔 만들기
+    /* var num = 1;
+    while(num < 101){
+      if (num % 2 == 0) {
+        first(num);
+        second(num);
+      }
+      else{
+        first(num);
+      }
+      num++;
+    }  */
+    for (var num = 1; num < 101; num++){
+      first(num);
+      if(num % 2 == 0){
+        second(num);
+      }
+    }
+
+    // first(1);
+    // first(2);
+    // document.write('<li>1</li>');
+    // document.write('<li>2</li>');
+    // second(2);
+    // document.write('<li>3</li>');
+    // first(3);
+    // second(3);
+  </script>
+  </ul>
+  </body>
+</html>

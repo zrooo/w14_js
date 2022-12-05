@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    //showall은 출력하지 않도록 만들기 ->if
+        var player1 = ['7', '손흥민', 'MF', '토트넘 홋스퍼'];
+        var player = {
+          number: '7',
+          name: '손흥민',
+          position: 'MF',
+          club: '토트넘 홋스퍼',
+          showAll : function(){
+            for(var key in player){
+              if (key != 'showAll'){
+              console.log(key + ':' + player[key]);
+          }
+        }
+      }
+    };
+    </script>
+  </body>
+</html>
